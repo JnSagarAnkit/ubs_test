@@ -1,5 +1,13 @@
 package com.ubs.opsit.interviews.support;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.jbehave.core.io.CodeLocations.codeLocationFromClass;
+import static org.jbehave.core.reporters.Format.CONSOLE;
+import static org.jbehave.core.reporters.Format.HTML;
+
+import java.text.SimpleDateFormat;
+import java.util.List;
+
 import org.jbehave.core.ConfigurableEmbedder;
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.MostUsefulConfiguration;
@@ -11,14 +19,6 @@ import org.jbehave.core.steps.InstanceStepsFactory;
 import org.jbehave.core.steps.ParameterConverters;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.text.SimpleDateFormat;
-import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.jbehave.core.io.CodeLocations.codeLocationFromClass;
-import static org.jbehave.core.reporters.Format.CONSOLE;
-import static org.jbehave.core.reporters.Format.HTML;
 
 /**
  * A class to fully encapsulates all of the JBehave plumbing behind a builder style API.  The expected use for this would be:
